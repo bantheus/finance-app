@@ -24,7 +24,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="hidden h-full items-center justify-center bg-[#074040] lg:flex">
+      <div className="hidden h-full items-center justify-center bg-gradient-to-b from-sky-900 to-teal-900 lg:flex">
         <Image src="/logo.svg" alt="Logo" width={120} height={120} />
       </div>
     </div>
