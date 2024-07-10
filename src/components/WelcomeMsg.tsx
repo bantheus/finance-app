@@ -7,7 +7,7 @@ const WelcomeMsg = () => {
   return (
     <div className="mb-4 space-y-2">
       <h2 className="text-balance text-2xl font-medium text-white lg:text-4xl">
-        Bem vindo de volta{isLoaded ? ", " : " "}
+        Bem vindo(a) de volta{isLoaded ? ", " : " "}
         {user?.firstName} 🤘
       </h2>
       <p className="text-sm text-teal-500/80 lg:text-base">
