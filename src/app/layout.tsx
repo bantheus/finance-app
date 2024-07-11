@@ -4,6 +4,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
+import { QueryProvider } from "../providers/query-providers";
 import "./globals.css";
 
 const fontSans = FontSans({
@@ -35,7 +36,7 @@ export default function RootLayout({
             fontSans.variable,
           )}
         >
-          {children}
+          <QueryProvider>{children}</QueryProvider>
         </body>
       </html>
     </ClerkProvider>
